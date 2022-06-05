@@ -5,7 +5,7 @@ import Heroimage from '../../../src/Heroimage2.svg'
 function Home() {
   return (
     <>
-    <section className='homemaincontainer' id='/'>
+    <section  className='homemaincontainer' id='/'>
     <div className='wrapper'>
         <div className='herocontainer'>
           <div className='herobigtext'>

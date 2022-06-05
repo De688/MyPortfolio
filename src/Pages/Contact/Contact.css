@@ -149,6 +149,15 @@
     border-radius: 10px;
     background-color: rgba(153, 245, 181, 0.164);
 }
+.danger{
+    width: 80%;
+    min-height: 40px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: rgb(198, 245, 248);
+    border-radius: 10px;
+    background-color: rgba(255, 65, 65, 0.164);
+}
 @media screen and (max-width:900px){
     .formandemail{
         display: flex;

@@ -8,6 +8,7 @@ import Emailjs from 'emailjs-com'
 
 function Contact() {
   const [messagesent, setmessagesent] = useState(false)
+  const [Error, setError] = useState(false)
   const form = useRef()
   const submitMessage=(e)=>{
       e.preventDefault()
@@ -18,16 +19,17 @@ function Contact() {
         setmessagesent(true)
     }, (error) => {
         console.log(error.text);
+        setError('True')
     });
   }
   useEffect(() => {
     const Timeout = setTimeout(()=>{
       setmessagesent(false)
-    },100)
+    },3000)
   },[])
   
   return (
-    <section className='contactmaincontainer'>
+    <section className='contactmaincontainer' id='contact'>
         <div className='contactwrapper'>
           <div className='header'>
             <h1>Contact Me</h1>
@@ -40,7 +42,8 @@ function Contact() {
               <input name='email'  className='contactform1' type='text'/><br/>
               <label  typeof='text'>Message</label><br/>
               <textarea name='message' maxLength='100' rows="10" className='contactform2' type='text'/><br/>
-              {messagesent ? <div className='messagesentalam'>Thank you, i will reply back to you as soon as possible!</div> :<></>}
+              {messagesent ? <div className='messagesentalam'>messsage sent successfullt !, Thank you, i will reply back to you as soon as i receive this message!</div> :<></>}
+              {Error ? <div className='danger'>failed! , this might be caused by network issues!</div> :<></>}
 
               <button type='submit' className='formbtn' onClick={submitMessage}>Send Message</button>
             </form>

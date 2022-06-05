@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './Navbar.css'
+import {Link} from 'react-scroll'
 import {NavLink} from 'react-router-dom'
 import { AiFillGithub,AiOutlineInstagram,AiOutlineTwitter } from "react-icons/ai";
 
@@ -16,6 +17,11 @@ function Navbar() {
         color: isActive ? 'rgb(184, 248, 211)' : 'rgba(167, 228, 192, 0.685)'
       }
   }
+
+  // Scroll to a certain part of the page smoothly 
+  // when a button is clicked
+
+ 
   return (
     <section className='navbarcontainer'>
         <div className='logo'>
@@ -23,15 +29,18 @@ function Navbar() {
         </div>
         <div className={!toggled ?'headerInfo' :'headerInfo-isopen'}>
            <ul>
-               <NavLink to='/' style={activebtnstyle} className='navbar-li'>
+               <Link  to='/' smooth={true} spy={true} activeClass="active" style={{activebtnstyle}} className='navbar-li'>
                    <li>Home</li>
-               </NavLink>
-               <NavLink to='#Mywork' style={activebtnstyle}  className= 'navbar-li' >
+               </Link>
+               <Link to='mywork' smooth={true} spy={true} activeClass="active" style={{activebtnstyle}}  className= 'navbar-li' >
                    <li>My work</li>
-               </NavLink>
-               <NavLink to='#hireme' style={activebtnstyle}  className='navbar-li'>
-                   <li>Hire me</li>
-               </NavLink>
+               </Link>
+               <Link to='tech' smooth={true} spy={true} activeClass="active" style={{activebtnstyle}}  className='navbar-li'>
+                   <li>Tech</li>
+               </Link>
+               <Link to='contact' smooth={true} spy={true} activeClass="active" style={{activebtnstyle}}  className='navbar-li'>
+                   <li>Contact</li>
+               </Link>
            </ul>
         </div>
         <div className='socialmedialogo'>

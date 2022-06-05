@@ -8,7 +8,8 @@ import './Mywork.css'
 
 function Mywork() {
   return (
-    <section id='Mywork' className='myworkmaincontainer'>
+    <>
+    <section  className='myworkmaincontainer' id='mywork'>
       <div className='myworkwrapper'>
           <div className='header2'>
             <h1 className='myworkline'>My Projects</h1>
@@ -48,6 +49,7 @@ function Mywork() {
             </div>
       </div>
     </section>
+    </>
   )
 }
 

@@ -5,10 +5,11 @@ import Mywork from './Mywork/Mywork'
 import Technologies from './Technologies/Technologies'
 
 function Pageroute() {
+  
   return (
     <>
       <Home/>
-      <Technologies/>
+      <Technologies />
       <Mywork/>
       <Contact/>
     </>

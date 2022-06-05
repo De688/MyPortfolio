@@ -14,7 +14,7 @@ import mongodb from '../../../src/mongodb.png'
 function Technologies() {
   return (
     <>
-    <section id='Technologies' className='techmaincontainer'>
+    <section   className='techmaincontainer' id='tech'>
       <div className='techwarapper'>
           <div className='header'>
             <h1>Technologies</h1>
