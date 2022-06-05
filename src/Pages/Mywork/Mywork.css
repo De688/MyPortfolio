@@ -1,0 +1,166 @@
+.myworkmaincontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+}
+.myworkwrapper{
+    width: 80%;
+    height: 100%;
+    background-color:transparent;
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+    margin-top: 100px;
+}
+.header2{
+    width: 90%;
+display: flex;
+justify-content: flex-end;
+
+}
+ .myworkline{
+    margin-left: 70px;
+    font-family: 'Ubuntu',sans-serif;
+    color: rgb(190, 255, 217);
+    margin-top: 50px;
+    position: relative;
+    
+}
+.myworkline::after{
+    content: '';
+    background: linear-gradient(90deg,rgb(0, 132, 255),rgb(0, 255, 200));
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    border-radius: 5px;
+    left: 20px;
+    z-index: 2;
+    top: -20px;
+}
+.allmyworkwrapper{
+  width: 100%;
+  height: 100%;
+  margin-left: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.myworkcard{
+    width: 250px;
+    min-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    border-radius:10px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+   border: 1px solid rgb(65, 88, 87);
+    background-color: rgba(38, 56, 56, 0.384);
+}
+.cardImage{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cardandtext{
+    width: 100%;
+    height: 150px;
+}
+
+.projectName{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: 20;
+  padding: 10px 20px;
+  font-weight: bold;
+  color:  black;
+  font-family: 'Ubuntu',sans-serif;
+}
+.projectName::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0))
+}
+.techused{
+    border: 1px solid rgba(90, 98, 133, 0.363);
+}
+.techused ul{
+    display: flex;
+    flex-wrap: wrap;
+   list-style: none;
+   color: rgb(190, 255, 217);
+  
+    
+}
+.techused li{
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+   padding-right: 10px;
+    font-weight: bold;
+    font-family: 'Ubuntu',sans-serif;
+}
+.projdescription{
+    font-size: 15px;
+    padding: 2px 10px;
+    color: rgba(190, 255, 217, 0.425);
+}
+.projdescription{
+    border: 1px solid rgba(90, 98, 133, 0.363);
+}
+.projvisit{
+  
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+.linkbtn2{
+   font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgba(207, 247, 235, 0.993);
+    background:transparent;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
+}
+.linkbtn2:hover{
+     
+     color: rgba(156, 247, 194, 0.993);
+    
+ }
+@media screen and (max-width:1030px){
+    .myworkline{
+        margin-left:0px ;
+    }
+    .allmyworkwrapper{
+        margin-left:0px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:700px){
+    .techmaincontainer{
+        margin-top: 80px;
+    }
+}

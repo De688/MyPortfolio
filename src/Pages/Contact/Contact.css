@@ -1,0 +1,193 @@
+.contactmaincontainer{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-bottom: 50px;
+    align-items: center;
+    background-color: rgb(33, 35, 59);
+}
+.contactwrapper{
+        width: 80%;
+        background-color:transparent;
+        display: flex; 
+        flex-direction: column;
+        height: 100%;
+        margin-left: 100px;
+}
+.header{
+        margin-left: 100px;
+        font-family: 'Ubuntu',sans-serif;
+        color: rgb(190, 255, 217);
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+       
+}
+.header::before{
+        content: '';
+        background: linear-gradient(90deg,rgb(0, 132, 255),rgb(0, 255, 200));
+        position: absolute;
+        width: 100px;
+        height: 6px;
+        border-radius: 5px;
+        left: 20px;
+        z-index: 2;
+}
+
+.formandemail{
+    display: flex;
+
+}
+.contactform{
+    margin-left: 75px;
+    width: 60%;
+}
+.contactform1{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 30px;
+    width: 80%;
+    border: none;
+    outline: none;
+    color: rgb(221, 252, 252);
+    background-color: rgb(23, 25, 39);
+}
+
+.contactform2{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 150px;
+    width: 80%;
+    color: rgb(198, 255, 255);
+    border: none;
+    outline: none;
+    background-color: rgb(20, 24, 32);
+}
+.formandemail label{
+    color: rgb(178, 212, 208);
+}
+.numberandemail{
+    display: flex;
+    flex-direction: column;
+
+}
+.numberandemailwrapper{
+  
+    margin-top: 30px;
+}
+.phonelogo{
+    width: 30px;
+    height: 30px;
+}
+.phonelogotext{
+    color: rgb(191, 255, 255);
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 17px;
+    padding-right: 10px;
+}
+.phonelogotext span{
+  color: rgb(87, 113, 131);
+  padding-right: 10px;
+}
+.formbtn{
+    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: rgb(168, 253, 253);
+    border: none;
+    margin-top: 20px;
+    box-shadow: rgba(49, 50, 54, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;  
+     background-color:rgb(9, 135, 194);
+     transition: background-color 0.3s ease;
+}
+.formbtn:hover{
+    background-color: rgb(49, 52, 88);
+    color: rgb(149, 191, 226);
+}
+.logowraper{
+    color: rgba(176, 255, 242, 0.568);
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+.logowraper2:hover{
+    color: rgba(176, 255, 242, 0.986);
+
+}
+.logowraper3:hover{
+    color: rgba(176, 255, 242, 0.986);
+
+}
+.logowraper4:hover{
+    color: rgba(176, 255, 242, 0.986);
+
+}
+.logowraper2{
+    display: flex; 
+    align-items: center;
+}
+.logowraper3{
+    display: flex; 
+    align-items: center;
+}
+.logowraper4{
+    display: flex; 
+    align-items: center;
+}
+.logowraper1{
+    margin-left: 20px;
+    font-size: 40px;
+    padding-right: 10px;
+}
+.messagesentalam{
+    width: 80%;
+    min-height: 40px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: aquamarine;
+    border-radius: 10px;
+    background-color: rgba(153, 245, 181, 0.164);
+}
+@media screen and (max-width:900px){
+    .formandemail{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        margin-left: 20px;
+    }
+    .contactwrapper{
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerform{
+        margin-left: 0px;
+    }
+    .contactform{
+       margin-left: 0px;
+    }
+    .contactform1{
+        width: 350px;
+    }
+    .contactform2{
+        width: 350px;
+    }
+}
+@media screen and (max-width:700px){
+    .techmaincontainer{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:300px){
+    
+        .contactform1{
+            width: 200px;
+        }
+        .contactform2{
+            width: 200px;
+        }
+    
+}
