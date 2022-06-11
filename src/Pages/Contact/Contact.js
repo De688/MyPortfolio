@@ -4,6 +4,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { FcCellPhone,FcFeedback } from 'react-icons/fc';
 import { SiFiverr,SiUpwork } from 'react-icons/si';
 import Emailjs from 'emailjs-com'
+import {Link} from 'react-router-dom'
 
 
 function Contact() {
@@ -57,10 +58,18 @@ function Contact() {
                  <FcCellPhone className='phonelogo'/><div className='phonelogotext'><span>Phone number:</span>+255783751907</div>
                </div>
                <div className='logowraper'>
-                
-                 <div className='logowraper2'><AiFillLinkedin className='logowraper1'/><h3>Linked In</h3></div>
-                 <div className='logowraper3'><SiFiverr className='logowraper1'/><h3>Fiverr</h3></div>
-                 <div className='logowraper4'><SiUpwork className='logowraper1'/><h3>Upwork</h3></div>
+                <Link to='https://www.linkedin.com/in/christopher-daniel-46055820a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3DlrBPvSSruq7YvmCOZpmg%3D%3D'>
+                <div className='logowraper2'><AiFillLinkedin className='logowraper1'/><h3>Linked In</h3></div>
+
+                </Link>
+                <Link to=''>
+                <div className='logowraper3'><SiFiverr className='logowraper1'/><h3>Fiverr</h3></div>
+
+                </Link>
+                <Link to=''>
+                <div className='logowraper4'><SiUpwork className='logowraper1'/><h3>Upwork</h3></div>
+
+                </Link>
                  
                  
                </div>
