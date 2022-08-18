@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar.js";
 import Pageroute from "./Pages/pageroute";
 import ReadMore from "./Pages/Readmore/ReadMore";
