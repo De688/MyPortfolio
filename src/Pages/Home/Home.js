@@ -12,7 +12,7 @@ function Home() {
           <div className="herocontainer">
             <div className="herobigtext">
               <div className="herobigtext1">
-                I Builds Beautiful Website For Your Bussiness.
+                Natengeneza custom Websites za kisasa kwa ajili ya biashara.
               </div>
               <div className="herobigtext2">
                 I am a full stack web developer, we can work together to bulid a

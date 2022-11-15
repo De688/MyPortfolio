@@ -63,15 +63,15 @@ function Contact() {
             <br />
             {messagesent ? (
               <div className="messagesentalam">
-                messsage sent successfullt !, Thank you, i will reply back to
-                you as soon as i receive this message!
+                message sent successfully!, Thank you, i will reply back to you
+                as soon as i receive this message!
               </div>
             ) : (
               <></>
             )}
             {Error ? (
               <div className="danger">
-                failed! , this might be caused by network issues!
+                failed! , Please check your connection and try again!
               </div>
             ) : (
               <></>

@@ -32,6 +32,7 @@ function Navbar() {
       <div className={!toggled ? "headerInfo" : "headerInfo-isopen"}>
         <ul>
           <Link
+            onClick={showmenu}
             to="/"
             smooth={true}
             spy={true}
@@ -42,6 +43,7 @@ function Navbar() {
             <li>Home</li>
           </Link>
           <Link
+            onClick={showmenu}
             to="mywork"
             smooth={true}
             spy={true}
@@ -52,6 +54,7 @@ function Navbar() {
             <li>My work</li>
           </Link>
           <Link
+            onClick={showmenu}
             to="tech"
             smooth={true}
             spy={true}
@@ -62,6 +65,7 @@ function Navbar() {
             <li>Tech</li>
           </Link>
           <Link
+            onClick={showmenu}
             to="contact"
             smooth={true}
             spy={true}
@@ -75,7 +79,7 @@ function Navbar() {
       </div>
       <div className="socialmedialogo">
         <NavLink
-          to="#"
+          to=""
           className="sociallogo-navlink"
           activeStyle={{ fontSize: "25px", color: "rgb(184, 248, 211)" }}
         >
