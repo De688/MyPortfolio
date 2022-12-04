@@ -29,7 +29,7 @@ function Navbar() {
       <div className="logo">
         <h3>Christopher Daniel</h3>
       </div>
-      <div className={!toggled ? "headerInfo" : "headerInfo"}>
+      <div className={!toggled ? "headerInfo" : "headerInfo-isopen"}>
         <ul>
           <Link
             onClick={showmenu}
