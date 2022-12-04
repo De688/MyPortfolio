@@ -27,13 +27,22 @@
   display: flex;
   justify-content: center;
 }
-.headerInfo1 {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-}
 
 .headerInfo ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+.headerInfo-isopen {
+  width: 40%;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+}
+.headerInfo-isopen ul {
   width: 100%;
   display: flex;
   justify-content: center;
