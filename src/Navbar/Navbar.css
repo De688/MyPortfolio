@@ -27,6 +27,11 @@
   display: flex;
   justify-content: center;
 }
+.headerInfo1 {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
 
 .headerInfo ul {
   width: 100%;
