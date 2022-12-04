@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Pageroute />} />
+          <Route exact path="/MyPortfolio" element={<Pageroute />} />
           <Route path="/readmore" element={<ReadMore />} />
         </Routes>
       </Router>
