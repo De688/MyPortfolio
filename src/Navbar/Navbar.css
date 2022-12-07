@@ -118,6 +118,7 @@
     font-size: 25px;
     color: rgb(167, 228, 192);
   }
+  
 }
 
 .hambager {
@@ -159,6 +160,16 @@
     font-size: 18px;
   }
   .headerInfo ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    margin-top: 50px;
+  }
+  .headerInfo-isopen ul {
     display: flex;
     width: 100%;
     height: 100%;
