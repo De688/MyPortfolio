@@ -23,7 +23,7 @@ function App() {
       <HashRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/MyPortfolio" element={<Pageroute />} />
+          <Route exact path="/" element={<Pageroute />} />
           <Route path="/readmore" element={<ReadMore />} />
         </Routes>
       </HashRouter>
